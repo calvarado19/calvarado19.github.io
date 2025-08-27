@@ -17,4 +17,4 @@ title: Home
   <h2>Contact</h2>
   <p>LinkedIn: <a href="https://linkedin.com/in/carlos-alvarado-370b39275/">My Profile</a></p>
 </body>
-</html>
+
