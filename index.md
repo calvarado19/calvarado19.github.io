@@ -6,8 +6,8 @@ description: "Cybersecurity student & IT engineer — blue team labs, networking
 name: Carlos Alvarado
 role: "IT Engineer · Cybersecurity Student"
 location: "San Antonio, TX"
-email: "your.email@example.com"         # change me
-github: "https://github.com/YOURGITHUB" # change me
+email: "20car06@gmail.com"         # change me
+github: "https://github.com/calvarado19" # change me
 linkedin: "https://www.linkedin.com/in/carlos-alvarado-370b39275/"
 resume_url: "/resume.pdf"               # upload resume.pdf to repo root (or change path)
 
@@ -20,9 +20,9 @@ skills:
 
 # ====== CERTS / STUDY ======
 certs:
-  - "CompTIA Security+ (SY0-701) — in progress"
-  - "CCSP — studying"
-  - "CISSP — long-term goal"
+  - "CompTIA Security+ (SY0-701) — Completed"
+  - "CCSP — Long Term Goal"
+
 
 # ====== PROJECTS (edit/add as needed) ======
 projects:
@@ -73,8 +73,8 @@ recent_posts_limit: 3
 </p>
 
 <div class="hero">
-  <h1>{{ page.role }}</h1>
-  <p>Hi, I’m <strong>{{ page.name }}</strong> — an IT engineer in {{ page.location }} transitioning into cybersecurity. I build defensive labs, automate triage with Python, and document clear incident notes.</p>
+  <h1>{{ Summary }}</h1>
+  <p>Hi, I’m <strong>{{ Carlos Alvarado }}</strong> — an IT engineer in {{ page.location }} transitioning into cybersecurity. I build defensive labs, automate triage with Python, and document clear incident notes.</p>
   <p>
     <a class="btn" href="#projects">Explore Projects</a>
     <a class="btn ghost" href="{{ page.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a>
