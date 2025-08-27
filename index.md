@@ -1,7 +1,3 @@
----
-layout: default
-title: Home
----
 <head>
   <title>Carlos Alvarado - Cybersecurity Portfolio</title>
 </head>
