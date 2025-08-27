@@ -73,8 +73,8 @@ recent_posts_limit: 3
 </p>
 
 <div class="hero">
-  <h1>{{ Summary }}</h1>
-  <p>Hi, I’m <strong>{{ Carlos Alvarado }}</strong> — an IT engineer in {{ page.location }} transitioning into cybersecurity. I build defensive labs, automate triage with Python, and document clear incident notes.</p>
+  <h1>{Summary}</h1>
+  <p>Hi, I’m <strong>{Carlos Alvarado}</strong> — an IT engineer in {{ page.location }} transitioning into cybersecurity. I build defensive labs, automate triage with Python, and document clear incident notes.</p>
   <p>
     <a class="btn" href="#projects">Explore Projects</a>
     <a class="btn ghost" href="{{ page.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a>
