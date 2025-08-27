@@ -1,6 +1,5 @@
 theme: jekyll-theme-minimal
-<!DOCTYPE html>
-<html>
+
 <head>
   <title>Carlos Alvarado - Cybersecurity Portfolio</title>
 </head>
@@ -16,4 +15,3 @@ theme: jekyll-theme-minimal
   <h2>Contact</h2>
   <p>LinkedIn: <a href="https://linkedin.com/in/carlos-alvarado-370b39275/">My Profile</a></p>
 </body>
-</html>
