@@ -73,7 +73,7 @@ recent_posts_limit: 3
 
 <div class="hero">
   <h1>Summary</h1>
-  <p>Hi, I’m <strong>Carlos Alvarado</strong> — an IT engineer in {{ page.location }} pursuing a BBS in Cybersecurity. I build defensive labs, automate triage with Python, and document clear incident notes.</p>
+  <p>Hi, I’m <strong>Carlos Alvarado</strong> — an IT engineer in {{ page.location }} pursuing a Bachelor of Science in Cybersecurity. I build defensive labs, automate triage with Python, and document clear incident notes.</p>
   <p>
     <a class="btn" href="#projects">Explore Projects</a>
     <a class="btn ghost" href="{{ page.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a>
