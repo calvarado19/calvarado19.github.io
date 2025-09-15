@@ -41,22 +41,21 @@ projects:
     links:
       notes: "#"
 
-  - title: "Python: Windows Event Log Parser (4624/4625)"
-    tags: ["Automation"]
-    stack: "Python"
-    summary: "Parses Security.evtx, aggregates failed logins by IP/user, outputs CSV for quick triage."
-    links:
-      repo: "#"
+  - title: "Home Lab – TrueNAS Scale & Virtualization"
+    tags: ["Home Lab", "Systems", "Networking"]
+    stack: "TrueNAS Scale, Dell Presicion 5820, Windows Server, Hyper-V/VM's"
+    summary: "Built a Dell Presicion 5820 to host Jellyfin and network services; practiced Windows domain services, backup/restore, and segmentation; validated UPS behavior and BIOS AC Power Recovery for outage resilience."
+  
 
   - title: "MikroTik/UniFi VLAN Segmentation"
     tags: ["Networking"]
     stack: "MikroTik (WinBox), UniFi"
     summary: "Separated staff/guest/IoT with inter-VLAN ACLs, DHCP options, and testing/validation."
 
-  - title: "Dropbox Cleanup with Backup Safeguard"
-    tags: ["Docs", "Blue Team"]
-    stack: "Windows, Dropbox"
-    summary: "Backed up critical files, removed local sync to free space, and staged NAS deletion after hold period."
+  - title: "Smart Home & Network Lab"
+    tags: ["Homelab", "Automation", "Networking"]
+    stack: "UniFi Dream Machine, UniFi Switches, Raspberry Pi (Home Assistant), Apple HomeKit"
+    summary: "Built and manage a UniFi-based home network with a Raspberry Pi running Home Assistant. From my phone (Apple HomeKit), I control light switches, TVs, AV receivers, speakers, cameras, and thermostat. Network is segmented (IoT VLAN), with WPA3 and least-privilege device access, plus presence-based automations and scheduled scenes."
 
 # ====== OPTIONAL: highlight blog posts (Jekyll will show site.posts too) ======
 show_recent_posts: true   # requires you to add files under _posts/
