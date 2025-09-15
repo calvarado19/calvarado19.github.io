@@ -41,7 +41,7 @@ projects:
     links:
       notes: "#"
 
-  - title: "Home Lab – TrueNAS Scale & Virtualization"
+  - title: "Media Server"
     tags: ["Home Lab", "Systems", "Networking"]
     stack: "TrueNAS Scale, Dell Presicion 5820, Windows Server, Hyper-V/VM's"
     summary: "Built a Dell Presicion 5820 to host Jellyfin and network services; practiced Windows domain services, backup/restore, and segmentation; validated UPS behavior and BIOS AC Power Recovery for outage resilience."
