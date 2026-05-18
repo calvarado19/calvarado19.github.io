@@ -75,7 +75,7 @@ recent_posts_limit: 3
 
 
 <section class="panel intro" id="about">
-  <h2>{{ page.name }}</h2>
+  <h1>{{ page.name }}</h1>
   <p class="eyebrow">{{ page.role }}</p>
   <p class="lede">IT engineer in {{ page.location }} focused on defensive security labs, networking, and practical automation for incident triage.</p>
   <p class="hero-actions">
