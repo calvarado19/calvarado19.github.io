@@ -74,18 +74,16 @@ recent_posts_limit: 3
 
 
 
-<header class="site-header">
+<section class="panel intro" id="about">
+  <h2>{{ page.name }}</h2>
   <p class="eyebrow">{{ page.role }}</p>
-  <h1>{{ page.name }}</h1>
   <p class="lede">IT engineer in {{ page.location }} focused on defensive security labs, networking, and practical automation for incident triage.</p>
-  <div class="hero-actions">
+  <p class="hero-actions">
     <a class="btn" href="#projects">View Projects</a>
     <a class="btn ghost" href="#contact">Contact</a>
     <a class="btn ghost" href="{{ page.resume_url | relative_url }}" target="_blank" rel="noreferrer">Resume</a>
-  </div>
-</header>
- main
-
+  </p>
+</section>
 <nav class="quick-nav" aria-label="Section navigation">
   <a href="#projects">Projects</a>
   <a href="#skills">Skills</a>
