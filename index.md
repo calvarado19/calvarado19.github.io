@@ -73,16 +73,6 @@ recent_posts_limit: 3
 
 
 
-<section class="panel intro" id="about">
-  <h2>{{ page.name }}</h2>
-  <p class="eyebrow">{{ page.role }}</p>
-  <p class="lede">IT engineer in {{ page.location }} focused on defensive security labs, networking, and practical automation for incident triage.</p>
-  <p class="hero-actions">
-    <a class="btn" href="#projects">View Projects</a>
-    <a class="btn ghost" href="#contact">Contact</a>
-    <a class="btn ghost" href="{{ page.resume_url | relative_url }}" target="_blank" rel="noreferrer">Resume</a>
-  </p>
-</section>
 
 <header class="site-header">
   <p class="eyebrow">{{ page.role }}</p>
