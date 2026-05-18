@@ -62,6 +62,7 @@ show_recent_posts: true   # requires you to add files under _posts/
 recent_posts_limit: 3
 ---
 
+codex/improve-portfolio-website-design-0ibyei
 <nav class="quick-nav" aria-label="Section navigation">
   <a href="#projects">Projects</a>
   <a href="#skills">Skills</a>
@@ -70,6 +71,40 @@ recent_posts_limit: 3
   <a href="#contact">Contact</a>
 </nav>
 
+
+ codex/improve-portfolio-website-design-sklrvg
+<section class="panel intro" id="about">
+  <h2>{{ page.name }}</h2>
+  <p class="eyebrow">{{ page.role }}</p>
+  <p class="lede">IT engineer in {{ page.location }} focused on defensive security labs, networking, and practical automation for incident triage.</p>
+  <p class="hero-actions">
+    <a class="btn" href="#projects">View Projects</a>
+    <a class="btn ghost" href="#contact">Contact</a>
+    <a class="btn ghost" href="{{ page.resume_url | relative_url }}" target="_blank" rel="noreferrer">Resume</a>
+  </p>
+</section>
+
+<header class="site-header">
+  <p class="eyebrow">{{ page.role }}</p>
+  <h1>{{ page.name }}</h1>
+  <p class="lede">IT engineer in {{ page.location }} focused on defensive security labs, networking, and practical automation for incident triage.</p>
+  <div class="hero-actions">
+    <a class="btn" href="#projects">View Projects</a>
+    <a class="btn ghost" href="#contact">Contact</a>
+    <a class="btn ghost" href="{{ page.resume_url | relative_url }}" target="_blank" rel="noreferrer">Resume</a>
+  </div>
+</header>
+ main
+
+<nav class="quick-nav" aria-label="Section navigation">
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#certs">Certs</a>
+  <a href="#posts">Notes</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+ main
 ## Skills & Stack {#skills}
 <div class="info-grid">
 {% for cat in page.skills %}
@@ -143,10 +178,33 @@ recent_posts_limit: 3
   }
 
   body { background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 20%, var(--bg) 100%); color: var(--text); }
+ codex/improve-portfolio-website-design-0ibyei
+
+codex/improve-portfolio-website-design-sklrvg
+ main
   h2, h3 { color: var(--text); letter-spacing: -.02em; }
   h2 { margin-top: 2rem; }
 
   .eyebrow { margin: 0; color: var(--brand); font-weight: 700; font-size: .9rem; text-transform: uppercase; letter-spacing: .08em; }
+ codex/improve-portfolio-website-design-0ibyei
+
+  .intro h2 { margin: 0 0 .3rem; font-size: clamp(1.8rem, 4vw, 2.4rem); }
+
+  h1, h2, h3 { color: var(--text); letter-spacing: -.02em; }
+  h2 { margin-top: 2rem; }
+
+  .site-header {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: calc(var(--radius) + 4px);
+    padding: 1.25rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+  }
+  .eyebrow { margin: 0; color: var(--brand); font-weight: 700; font-size: .9rem; text-transform: uppercase; letter-spacing: .08em; }
+  .site-header h1 { margin: .3rem 0; font-size: clamp(1.8rem, 4vw, 2.4rem); }
+ main
+ main
   .lede { color: var(--muted); max-width: 65ch; }
 
   .hero-actions { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: .8rem; }
@@ -225,6 +283,13 @@ recent_posts_limit: 3
   }
 
   @media (max-width: 640px) {
+ codex/improve-portfolio-website-design-0ibyei
+
+ codex/improve-portfolio-website-design-sklrvg
+
+    .site-header { padding: 1rem; }
+ main
+ main
     .quick-nav { position: sticky; top: .35rem; z-index: 5; }
   }
 
