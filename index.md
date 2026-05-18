@@ -45,7 +45,7 @@ projects:
     tags: ["Home Lab", "Systems", "Networking"]
     stack: "TrueNAS Scale, Dell Presicion 5820, Windows Server, Hyper-V/VM's"
     summary: "Built a Dell Presicion 5820 to host Jellyfin and network services; practiced Windows domain services, backup/restore, and segmentation; validated UPS behavior and BIOS AC Power Recovery for outage resilience."
-  
+
 
   - title: "MikroTik/UniFi VLAN Segmentation"
     tags: ["Networking"]
@@ -62,44 +62,48 @@ show_recent_posts: true   # requires you to add files under _posts/
 recent_posts_limit: 3
 ---
 
-<!-- Simple in-page nav -->
-<p>
-  <a class="btn" href="#projects">Projects</a>
-  <a class="btn ghost" href="#skills">Skills</a>
-  <a class="btn ghost" href="#certs">Certs</a>
-  <a class="btn ghost" href="#posts">Notes</a>
-  <a class="btn ghost" href="#contact">Contact</a>
-</p>
-
-<div class="hero">
-  <h1>Summary</h1>
-  <p>Hi, I’m <strong>Carlos Alvarado</strong> — an IT engineer in {{ page.location }} pursuing a Bachelor of Science in Cybersecurity. I build defensive labs, automate triage with Python, and document clear incident notes.</p>
-  <p>
-    <a class="btn" href="#projects">Explore Projects</a>
-    <a class="btn ghost" href="{{ page.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a>
-    <a class="btn ghost" href="{{ page.github }}" target="_blank" rel="noreferrer">GitHub</a>
-    <a class="btn ghost" href="{{ page.resume_url | relative_url }}" target="_blank" rel="noreferrer">Resume (PDF)</a>
+<section class="panel intro" id="about">
+  <h2>{{ page.name }}</h2>
+  <p class="eyebrow">{{ page.role }}</p>
+  <p class="lede">IT engineer in {{ page.location }} focused on defensive security labs, networking, and practical automation for incident triage.</p>
+  <p class="hero-actions">
+    <a class="btn" href="#projects">View Projects</a>
+    <a class="btn ghost" href="#contact">Contact</a>
+    <a class="btn ghost" href="{{ page.resume_url | relative_url }}" target="_blank" rel="noreferrer">Resume</a>
   </p>
+</section>
+
+<nav class="quick-nav" aria-label="Section navigation">
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#certs">Certs</a>
+  <a href="#posts">Notes</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+## Skills & Stack {#skills}
+<div class="info-grid">
+{% for cat in page.skills %}
+  <section class="panel">
+    <h3>{{ cat[0] }}</h3>
+    <p class="muted">{{ cat[1] | join: " · " }}</p>
+  </section>
+{% endfor %}
 </div>
 
-## 🔧 Skills & Stack {#skills}
-<ul>
-{% for cat in page.skills %}
-  <li><strong>{{ cat[0] }}:</strong> {{ cat[1] | join: ", " }}</li>
-{% endfor %}
-</ul>
+## Certifications & Study {#certs}
+<div class="panel">
+  <ul class="clean-list">
+  {% for c in page.certs %}
+    <li>{{ c }}</li>
+  {% endfor %}
+  </ul>
+</div>
 
-## 🛡️ Certifications & Study {#certs}
-<ul>
-{% for c in page.certs %}
-  <li>{{ c }}</li>
-{% endfor %}
-</ul>
-
-## 🚀 Projects {#projects}
-<div class="grid">
+## Projects {#projects}
+<div class="project-grid">
 {% for p in page.projects %}
-  <div class="card">
+  <article class="card">
     <h3>{{ p.title }}</h3>
     {% if p.tags %}<p class="tags">
       {% for t in p.tags %}<span class="tag">{{ t }}</span>{% endfor %}
@@ -108,43 +112,135 @@ recent_posts_limit: 3
     <p>{{ p.summary }}</p>
     <p class="links">
       {% if p.links and p.links.notes %}<a href="{{ p.links.notes }}" target="_blank" rel="noreferrer">Notes</a>{% endif %}
-      {% if p.links and p.links.repo %} · <a href="{{ p.links.repo }}" target="_blank" rel="noreferrer">Repo</a>{% endif %}
+      {% if p.links and p.links.repo %}<span aria-hidden="true"> · </span><a href="{{ p.links.repo }}" target="_blank" rel="noreferrer">Repo</a>{% endif %}
     </p>
-  </div>
+  </article>
 {% endfor %}
 </div>
 
 {% if page.show_recent_posts and site.posts and site.posts != empty %}
-## 📝 Recent Notes {#posts}
-<ul>
-  {% for post in site.posts limit: page.recent_posts_limit %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <span class="muted"> — {{ post.date | date: "%b %-d, %Y" }}</span><br/>
-      {% if post.excerpt %}<span class="muted">{{ post.excerpt | strip_html | truncate: 160 }}</span>{% endif %}
-    </li>
-  {% endfor %}
-</ul>
-<p class="muted">Add posts under <code>_posts/</code> like <code>_posts/2025-08-26-hello-world.md</code>.</p>
+## Recent Notes {#posts}
+<div class="panel">
+  <ul class="clean-list">
+    {% for post in site.posts limit: page.recent_posts_limit %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="muted"> — {{ post.date | date: "%b %-d, %Y" }}</span><br/>
+        {% if post.excerpt %}<span class="muted">{{ post.excerpt | strip_html | truncate: 160 }}</span>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 {% endif %}
 
-## ✉️ Contact {#contact}
-<p>
-  <strong>Email:</strong> <a href="mailto:{{ page.email }}">{{ page.email }}</a><br/>
-  <strong>LinkedIn:</strong> <a href="{{ page.linkedin }}" target="_blank" rel="noreferrer">{{ page.linkedin }}</a><br/>
-  <strong>GitHub:</strong> <a href="{{ page.github }}" target="_blank" rel="noreferrer">{{ page.github }}</a>
-</p>
-<p class="muted">Last updated {{ site.time | date: "%B %-d, %Y" }}.</p>
+## Contact {#contact}
+<div class="panel contact">
+  <p><strong>Email:</strong> <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+  <p><strong>LinkedIn:</strong> <a href="{{ page.linkedin }}" target="_blank" rel="noreferrer">{{ page.linkedin }}</a></p>
+  <p><strong>GitHub:</strong> <a href="{{ page.github }}" target="_blank" rel="noreferrer">{{ page.github }}</a></p>
+</div>
+<p class="muted stamp">Last updated {{ site.time | date: "%B %-d, %Y" }}.</p>
 
-<!-- Tiny styles to make cards look nicer with the Minimal theme -->
 <style>
-  .btn{display:inline-block;padding:.55rem .8rem;border:1px solid #d0d7de;border-radius:8px;background:#0969da;color:#fff;font-weight:600;margin-right:.35rem}
-  .btn.ghost{background:#fff;color:#0969da}
-  .hero{padding:.25rem 0 1rem;border-bottom:1px solid #eaecef;margin-bottom:1rem}
-  .muted{color:#6a737d}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
-  .card{border:1px solid #eaecef;border-radius:12px;padding:12px;background:#fff}
-  .card h3{margin:.2rem 0 .35rem}
-  .tag{display:inline-block;border:1px dashed #d0d7de;border-radius:999px;padding:2px 8px;margin-right:6px;font-size:.8rem;color:#57606a}
-  .links a{font-weight:600}
+  :root {
+    --bg: #f6f8fb;
+    --surface: #ffffff;
+    --text: #0f172a;
+    --muted: #475569;
+    --brand: #2563eb;
+    --border: #dbe2ea;
+    --radius: 14px;
+    --shadow: 0 8px 22px rgba(15, 23, 42, .07);
+  }
+
+  body { background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 20%, var(--bg) 100%); color: var(--text); }
+  h1, h2, h3 { color: var(--text); letter-spacing: -.02em; }
+  h2 { margin-top: 2rem; }
+
+  .eyebrow { margin: 0; color: var(--brand); font-weight: 700; font-size: .9rem; text-transform: uppercase; letter-spacing: .08em; }
+  .intro h2 { margin: 0 0 .3rem; font-size: clamp(1.8rem, 4vw, 2.4rem); }
+  .lede { color: var(--muted); max-width: 65ch; }
+
+  .hero-actions { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: .8rem; }
+  .btn {
+    display: inline-block;
+    padding: .62rem .95rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: var(--brand);
+    color: #fff;
+    font-weight: 650;
+    text-decoration: none;
+    transition: transform .15s ease, filter .2s ease;
+  }
+  .btn:hover { filter: brightness(1.07); transform: translateY(-1px); }
+  .btn.ghost { background: #fff; color: var(--brand); border-color: #bfd1fb; }
+
+  .quick-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    padding: .5rem;
+    margin-bottom: 1.1rem;
+    background: rgba(255,255,255,.7);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+  }
+  .quick-nav a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: 600;
+    padding: .35rem .55rem;
+    border-radius: 8px;
+  }
+  .quick-nav a:hover { background: #eaf1ff; }
+
+  .info-grid, .project-grid { display: grid; gap: .85rem; }
+  .info-grid { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+  .project-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+  .panel, .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: .95rem;
+    box-shadow: var(--shadow);
+  }
+
+  .card h3 { margin: 0 0 .35rem; }
+  .muted { color: var(--muted); }
+  .clean-list { margin: 0; padding-left: 1rem; }
+  .clean-list li { margin: .35rem 0; }
+
+  .tags { margin: .3rem 0 .55rem; }
+  .tag {
+    display: inline-block;
+    border: 1px solid #cbdaff;
+    background: #f0f5ff;
+    color: #274690;
+    border-radius: 999px;
+    padding: 2px 8px;
+    margin: 0 .35rem .35rem 0;
+    font-size: .78rem;
+    font-weight: 600;
+  }
+
+  .links a { font-weight: 600; }
+  .contact p { margin: .35rem 0; }
+  .stamp { margin-top: .65rem; }
+
+  a:focus-visible, .btn:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 640px) {
+    .quick-nav { position: sticky; top: .35rem; z-index: 5; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
 </style>
