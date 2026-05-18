@@ -84,13 +84,7 @@ recent_posts_limit: 3
     <a class="btn ghost" href="{{ page.resume_url | relative_url }}" target="_blank" rel="noreferrer">Resume</a>
   </p>
 </section>
-<nav class="quick-nav" aria-label="Section navigation">
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#certs">Certs</a>
-  <a href="#posts">Notes</a>
-  <a href="#contact">Contact</a>
-</nav>
+
 
  main
 ## Skills & Stack {#skills}
