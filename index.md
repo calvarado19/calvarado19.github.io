@@ -154,7 +154,7 @@ recent_posts_limit: 3
   }
 
   body { background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 20%, var(--bg) 100%); color: var(--text); }
-  h1, h2, h3 { color: var(--text); letter-spacing: -.02em; }
+  h2, h3 { color: var(--text); letter-spacing: -.02em; }
   h2 { margin-top: 2rem; }
 
   .eyebrow { margin: 0; color: var(--brand); font-weight: 700; font-size: .9rem; text-transform: uppercase; letter-spacing: .08em; }
