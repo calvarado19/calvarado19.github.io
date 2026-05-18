@@ -86,7 +86,7 @@ recent_posts_limit: 3
 </section>
 
 
- main
+
 ## Skills & Stack {#skills}
 <div class="info-grid">
 {% for cat in page.skills %}
