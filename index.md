@@ -62,7 +62,7 @@ show_recent_posts: true   # requires you to add files under _posts/
 recent_posts_limit: 3
 ---
 
-codex/improve-portfolio-website-design-0ibyei
+
 <nav class="quick-nav" aria-label="Section navigation">
   <a href="#projects">Projects</a>
   <a href="#skills">Skills</a>
@@ -72,7 +72,7 @@ codex/improve-portfolio-website-design-0ibyei
 </nav>
 
 
- codex/improve-portfolio-website-design-sklrvg
+
 <section class="panel intro" id="about">
   <h2>{{ page.name }}</h2>
   <p class="eyebrow">{{ page.role }}</p>
@@ -178,9 +178,7 @@ codex/improve-portfolio-website-design-0ibyei
   }
 
   body { background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 20%, var(--bg) 100%); color: var(--text); }
- codex/improve-portfolio-website-design-0ibyei
 
-codex/improve-portfolio-website-design-sklrvg
  main
   h2, h3 { color: var(--text); letter-spacing: -.02em; }
   h2 { margin-top: 2rem; }
@@ -283,9 +281,7 @@ codex/improve-portfolio-website-design-sklrvg
   }
 
   @media (max-width: 640px) {
- codex/improve-portfolio-website-design-0ibyei
-
- codex/improve-portfolio-website-design-sklrvg
+ 
 
     .site-header { padding: 1rem; }
  main
