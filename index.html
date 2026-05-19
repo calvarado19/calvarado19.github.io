@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carlos Alvarado - IT Engineer and Cybersecurity Student in San Antonio, TX.">
+  <title>Carlos Alvarado | IT Engineer & Cybersecurity Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Carlos Alvarado home">CA</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">San Antonio, TX</p>
+        <h1>Carlos Alvarado</h1>
+        <p class="role">IT Engineer · Cybersecurity Student</p>
+        <p class="hero-summary">
+          Focused on defensive security labs, networking, automation, and incident triage.
+        </p>
+        <div class="hero-actions" aria-label="Primary links">
+          <a class="button primary" href="/resume.pdf">Resume</a>
+          <a class="button secondary" href="mailto:20car06@gmail.com">Email Me</a>
+          <a class="button ghost" href="https://github.com/calvarado19" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Practical IT and defensive security work.</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          I am an IT engineer and cybersecurity student building hands-on experience across networking,
+          blue team investigations, system hardening, and automation for triage workflows.
+        </p>
+        <p>
+          My current focus is turning lab work into repeatable security practice: capturing traffic,
+          reviewing logs, segmenting networks, hardening Windows endpoints, and scripting reports that
+          make investigations easier to act on.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical areas I work in.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Networking</h3>
+          <ul>
+            <li>MikroTik</li>
+            <li>UniFi</li>
+            <li>VLANs</li>
+            <li>Firewall rules</li>
+            <li>PoE switching</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Blue Team</h3>
+          <ul>
+            <li>Nmap</li>
+            <li>Wireshark</li>
+            <li>Zeek</li>
+            <li>Windows Event Logs</li>
+            <li>Defender/ASR</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Automation</h3>
+          <ul>
+            <li>Python</li>
+            <li>Bash</li>
+            <li>Scripting for triage</li>
+            <li>CSV reports</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Tools</h3>
+          <ul>
+            <li>Burp</li>
+            <li>Metasploit</li>
+            <li>Autopsy/FTK</li>
+            <li>Jellyfin/TrueNAS homelab</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="section-heading">
+        <p class="eyebrow">Certifications</p>
+        <h2>Current credentials and goals.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="status complete">Completed</span>
+          <h3>CompTIA Security+ SY0-701</h3>
+        </div>
+        <div class="timeline-item">
+          <span class="status goal">Long Term Goal</span>
+          <h3>CCSP</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Portfolio labs and infrastructure work.</h2>
+      </div>
+      <div class="project-list">
+        <article class="project">
+          <h3>Windows 11 Hardening Lab</h3>
+          <p>Endpoint hardening practice focused on Windows security baselines, Defender/ASR controls, and event review.</p>
+        </article>
+        <article class="project">
+          <h3>Packet Capture & Threat Hunt</h3>
+          <p>Traffic capture and investigation workflow using tools such as Wireshark, Zeek, and Nmap to identify suspicious activity.</p>
+        </article>
+        <article class="project">
+          <h3>Media Server</h3>
+          <p>Homelab media services built around Jellyfin and TrueNAS with attention to storage, access, and reliability.</p>
+        </article>
+        <article class="project">
+          <h3>MikroTik/UniFi VLAN Segmentation</h3>
+          <p>Network segmentation project using VLANs, firewall rules, UniFi switching, and MikroTik routing controls.</p>
+        </article>
+        <article class="project">
+          <h3>Smart Home & Network Lab</h3>
+          <p>Practical home network lab for device isolation, PoE switching, smart home services, and operational troubleshooting.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect.</h2>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:20car06@gmail.com">20car06@gmail.com</a>
+        <a href="https://github.com/calvarado19" target="_blank" rel="noreferrer">github.com/calvarado19</a>
+        <a href="https://www.linkedin.com/in/carlos-alvarado-370b39275/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="/resume.pdf">Resume</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Carlos Alvarado. Built as a static HTML, CSS, and JavaScript portfolio.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
